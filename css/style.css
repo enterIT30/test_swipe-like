@@ -630,14 +630,11 @@ body {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  column-gap: 55px;
+  column-gap: 27.5px;
   row-gap: 10px;
   font-weight: 500;
   font-size: 15px;
   color: #bdbdbd;
-}
-.breadcrumb__list:not(:last-child) {
-  color: #068145;
 }
 .breadcrumb__item {
   position: relative;
@@ -645,7 +642,7 @@ body {
 .breadcrumb__item:not(:last-child)::after {
   content: "";
   position: absolute;
-  right: -28px;
+  right: 0;
   top: 50%;
   transform: translate(50%, -50%);
   width: 8px;
@@ -654,6 +651,9 @@ body {
 }
 .breadcrumb__item:last-child {
   color: #068145;
+}
+.breadcrumb__item:not(:last-child) {
+  padding-right: 27.5px;
 }
 .breadcrumb__item a {
   transition: color 0.3s ease 0s;
