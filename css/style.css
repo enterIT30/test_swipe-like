@@ -1099,6 +1099,7 @@ a.training-card:active {
 .table {
   border-collapse: collapse;
   align-items: start;
+  width: 100%;
   font-weight: 600;
   font-size: 16px;
   line-height: 22px;
